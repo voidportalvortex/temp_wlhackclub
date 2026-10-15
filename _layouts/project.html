@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="container">
+  {% include breadcrumbs.html %}
+  <br>
+
+  <h1>{{ page.title }}</h1>
+
+  <div class="my-1">
+    {% if page.tags %}
+      {% for tag in page.tags %}
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/{{ tag }}/{{ tag }}-{% if site.data.devicons[tag] %}{{ site.data.devicons[tag] }}{% else %}{{ 'original' }}{% endif %}.svg" draggable="false" width="32" height="32">
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  <div class="mb-2">
+    {{ page.description }}
+  </div>
+
+  {% if page.code_url %}
+    <a href="{{ page.code_url }}" class="btn btn-primary me-1" target="_blank">
+      <i class="bi bi-code-slash"></i>
+      Source Code
+    </a>
+  {% endif %}
+
+  {% if page.slides_url %}
+    <a href="{{ page.slides_url }}" class="btn btn-success" target="_blank">
+      <i class="bi bi-file-earmark-ppt-fill"></i>
+      Slides
+    </a>
+  {% endif %}
+  <hr>
+
+  {{ content }}
+</div>

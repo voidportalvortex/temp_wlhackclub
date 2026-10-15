@@ -1,0 +1,15 @@
+title: WL Hack Club
+description: Official website for the WL chapter of Hack Club.
+logo: /assets/icon.svg
+
+permalink: /:categories/:title
+
+defaults:
+  - scope:
+      path: "assets/**/*.pdf"
+    values:
+      sitemap: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
