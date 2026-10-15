@@ -30,7 +30,10 @@ function get_results(query) {
         }
     }
 
-    let words = query.match(/[^\s,]+/g).map((word) => word.toLowerCase());
+    let words = (query.match(/[^\s,]+/g) ?? []).map((word) => word.toLowerCase());
+    if (words.length === 0) {
+        return [];
+    }
 
     return idx.query((search) => {
         words.forEach((word) =>

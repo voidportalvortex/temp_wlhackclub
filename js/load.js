@@ -7,4 +7,4 @@ const getSystemDefaults = () => {
 
 const getTheme = localStorage.getItem("theme") ?? getSystemDefaults();
 
-addEventListener("DOMContentLoaded", document.documentElement.setAttribute("data-bs-theme", getTheme));
+document.documentElement.setAttribute("data-bs-theme", getTheme);
