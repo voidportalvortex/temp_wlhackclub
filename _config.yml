@@ -1,5 +1,7 @@
 title: WL Hack Club
 description: Official website for the WL chapter of Hack Club.
+baseurl: /temp_wlhackclub
+url: https://voidportalvortex.github.io
 logo: /assets/icon.svg
 
 permalink: /:categories/:title

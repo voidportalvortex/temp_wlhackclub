@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="HoosierHacks 7.0 is one of Indiana's largest high school hackathons. Join us in West Lafayette on October 25th, 2026.">
     <meta name="theme-color" content="#313131">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/hackathon/hoosier-logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ '/assets/hackathon/hoosier-logo.png' | relative_url }}">
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
 
@@ -23,15 +23,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
-    <link href="/stylesheets/hackathon.css" rel="stylesheet">
+    <link href="{{ '/stylesheets/hackathon.css' | relative_url }}" rel="stylesheet">
   </head>
 
   <body>
     <header class="site-header sticky-top py-1 bg-dark">
       <nav class="navbar navbar-expand-lg navbar-dark static-top" style="background-color: #313131;">
         <div class="container">
-          <a class="navbar-brand" href="/hackathon/#">
-            <img src="/assets/hackathon/hoosier-logo.png" alt="HoosierHacks Logo" height="60">
+          <a class="navbar-brand" href="{{ '/hackathon/#' | relative_url }}">
+            <img src="{{ '/assets/hackathon/hoosier-logo.png' | relative_url }}" alt="HoosierHacks Logo" height="60">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,25 +40,25 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active text-white" href="{{ site.url }}">Home</a>
+                <a class="nav-link active text-white" href="{{ '/' | relative_url }}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="/hackathon/#about">About</a>
+                <a class="nav-link active text-white" href="{{ '/hackathon/#about' | relative_url }}">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="/hackathon/#info">Info</a>
+                <a class="nav-link active text-white" href="{{ '/hackathon/#info' | relative_url }}">Info</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="/hackathon/#awards">Awards</a>
+                <a class="nav-link active text-white" href="{{ '/hackathon/#awards' | relative_url }}">Awards</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="/hackathon/#purdue-agriculture">Purdue Ag</a>
+                <a class="nav-link active text-white" href="{{ '/hackathon/#purdue-agriculture' | relative_url }}">Purdue Ag</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active text-white" href="/hackathon/#signup">Sign up</a>
+                <a class="nav-link active text-white" href="{{ '/hackathon/#signup' | relative_url }}">Sign up</a>
               </li>
               <li id="nav-item">
-                <a class="nav-link active text-white" href="/hackathon/#sponsors">Sponsors</a>
+                <a class="nav-link active text-white" href="{{ '/hackathon/#sponsors' | relative_url }}">Sponsors</a>
               </li>
               <li id="nav-item">
                 <a class="nav-link active text-white" href="https://hcb.hackclub.com/donations/start/westlafayettehackclub" target="_blank">Donate</a>
@@ -76,9 +76,9 @@
     <footer class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
-          <img src="/assets/hackathon/hoosier-logo.png" alt="logo" height="64px">
+          <img src="{{ '/assets/hackathon/hoosier-logo.png' | relative_url }}" alt="logo" height="64px">
           <small class="d-block mb-3 text-muted">&copy; {{ site.time | date: '%Y' }}</small>
-          <small class="d-block mb-3 text-muted"><a href="/credits">Website Credits</a></small>
+          <small class="d-block mb-3 text-muted"><a href="{{ '/credits' | relative_url }}">Website Credits</a></small>
           <small class="d-block mb-3 text-muted">Hoosier Hacks is fiscally backed by <a href="https://the.hackfoundation.org/">The Hack Foundation</a>, a 501(c)(3) non-profit (EIN: 81-2908499).</small>
         </div>
       </div>

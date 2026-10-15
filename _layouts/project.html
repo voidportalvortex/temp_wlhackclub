@@ -27,7 +27,7 @@ layout: default
   {% endif %}
 
   {% if page.slides_url %}
-    <a href="{{ page.slides_url }}" class="btn btn-success" target="_blank">
+    <a href="{{ page.slides_url | relative_url }}" class="btn btn-success" target="_blank">
       <i class="bi bi-file-earmark-ppt-fill"></i>
       Slides
     </a>

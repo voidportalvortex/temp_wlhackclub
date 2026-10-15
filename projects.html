@@ -12,7 +12,7 @@ permalink: /projects/
         {
           "id": {{ counter }},
           "title": "{{ post.title | replace: '"', '&#34;' }}",
-          "url": "{{ post.url }}",
+          "url": "{{ post.url | relative_url }}",
           "date": "{{ post.date | date: '%D' }}",
           "description": "{{ post.description | replace: '"', '&#34;' }}",
           "tags": [
@@ -31,7 +31,7 @@ permalink: /projects/
     {% endfor %}
   ];
 </script>
-<script src="/js/search.js" defer></script>
+<script src="{{ '/js/search.js' | relative_url }}" defer></script>
 
 <div class="container">
   <h1>Projects</h1>
@@ -48,7 +48,7 @@ permalink: /projects/
         {% endif %}
       </div>
       <p class="card-text">{{ site.categories.projects.first.description }}</p>
-      <a href="{{ site.categories.projects.first.url }}" class="btn btn-primary">Learn More</a>
+      <a href="{{ site.categories.projects.first.url | relative_url }}" class="btn btn-primary">Learn More</a>
     </div>
   </div>
 
@@ -79,7 +79,7 @@ permalink: /projects/
                 {% endif %}
               </div>
               <p class="card-text overflow-text">{{ post.description }}</p>
-              <a href="{{ post.url }}" class="btn btn-primary mt-auto me-auto">Learn More</a>
+              <a href="{{ post.url | relative_url }}" class="btn btn-primary mt-auto me-auto">Learn More</a>
             </div>
           </div>
         </div>

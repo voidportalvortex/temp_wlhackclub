@@ -8,10 +8,10 @@ layout: default
       <div class="flex-grow-1">
         <h2 class="display-5 fw-bold">Hackathon</h2>
         <p class="col-md-8 fs-4">Checkout our biannual Hackathon Event! Have a chance to compete against other students and win prizes. Free food and snacks will be provided. Click for more details!</p>
-        <a href="/hackathon" class="btn btn-primary btn-lg">Hackathon</a>
+        <a href="{{ '/hackathon' | relative_url }}" class="btn btn-primary btn-lg">Hackathon</a>
       </div>
       <div class="ms-4">
-        <img src="/assets/hackathon/hoosier-logo.png" alt="HoosierHacks Logo" height="200" class="d-none d-md-block border border-dark rounded">
+        <img src="{{ '/assets/hackathon/hoosier-logo.png' | relative_url }}" alt="HoosierHacks Logo" height="200" class="d-none d-md-block border border-dark rounded">
       </div>
     </div>
   </div>
@@ -20,14 +20,14 @@ layout: default
       <div class="h-100 p-5 bg-body-tertiary rounded-3">
         <h2>About Us</h2>
         <p>Visit the About Us section to learn more about WL Hack Club and what we do.</p>
-        <a href="/about" class="btn btn-primary">About Us</a>
+        <a href="{{ '/about' | relative_url }}" class="btn btn-primary">About Us</a>
       </div>
     </div>
     <div class="col-md-6">
       <div class="h-100 p-5 bg-body-tertiary rounded-3">
         <h2>Projects</h2>
         <p>Visit our projects page to get updates on our latest works!</p>
-        <a href="/projects" class="btn btn-primary">Projects</a>
+        <a href="{{ '/projects' | relative_url }}" class="btn btn-primary">Projects</a>
       </div>
     </div>
   </div>
